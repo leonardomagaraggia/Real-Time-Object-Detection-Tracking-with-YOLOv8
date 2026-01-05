@@ -21,6 +21,31 @@ The goal of this project is to provide a robust framework for detecting and main
 
 ---
 
+## Demo & Visual Results
+
+The following examples illustrate the core functionalities of the pipeline: object detection with YOLOv8 and multi-object tracking with ByteTrack.
+
+---
+
+### Object Detection — YOLOv8
+
+![YOLOv8 Detection](assets/demo/detection_yolov8.png)
+
+*Single-frame object detection using YOLOv8, showing bounding boxes, class labels, and confidence scores.*
+
+---
+
+### Multi-Object Tracking — ByteTrack
+
+![ByteTrack Tracking](assets/demo/tracking_bytetrack.gif)
+
+*Multi-object tracking with persistent ID assignment across frames. ByteTrack maintains object identities during crossings and partial occlusions.*
+
+---
+
+> Although the input source is a prerecorded video, the pipeline runs at real-time capable speeds and is designed for live video stream deployment with minimal changes.
+
+
 ## Technical Architecture
 
 The pipeline follows a two-stage approach:
@@ -128,4 +153,4 @@ Distributed under the **MIT License**. See the `LICENSE` file for more informati
 ---
 
 **Developed by:** Leonardo Magaraggia
-**GitHub:** [@your-username](https://github.com/leonardomagaraggia)
+**GitHub:** [@leonardomagaraggia](https://github.com/leonardomagaraggia)
