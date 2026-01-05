@@ -60,19 +60,31 @@ The system automatically detects the best available backend:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
-├── data/                   # Input video samples (ignored by git)
-├── data/output/            # Annotated videos and tracking logs
-├── models/                 # Local storage for .pt and .pth weights
+├── assets/
+│   └── demo/                   # Demo images/GIFs (not versioned)
+│       ├── detection_yolov8.jpg
+│       └── tracking_bytetrack.gif
+│
+├── data/
+│   ├── videos/
+│   │   └── input.mp4           # Input video (not versioned)
+│   └── output/                 # Output videos and tracking logs (generated)
+│
+├── models/                     # Local storage for model weights (.pt / .pth)
+│
 ├── src/
-│   ├── detect_video.py     # Pure inference script
-│   ├── track_video.py      # Tracking script using ByteTrack
-│   ├── benchmark_fps.py    # Performance profiling script
-│   └── utils.py            # Shared helper functions
-├── requirements.txt        # Project dependencies
-└── README.md               # Project documentation
+│   ├── detect_video.py         # Object detection on video
+│   ├── track_video.py          # Multi-object tracking with ByteTrack
+│   ├── benchmark_fps.py        # FPS and performance benchmarking
+│   └── utils.py                # Shared utilities (I/O, device selection)
+│
+├── requirements.txt            # Project dependencies
+├── .gitignore
+└── README.md                   # Project documentation
+
 ```
 
 ---
