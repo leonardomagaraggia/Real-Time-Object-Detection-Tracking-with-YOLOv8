@@ -106,7 +106,7 @@ Tests conducted on **Mac M2 (8GB RAM)** at **720p** resolution:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Installation & Environment
 ```bash
@@ -158,11 +158,10 @@ python src/benchmark_fps.py
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the **MIT License**. See the `LICENSE` file for more information.
 
 ---
 
 **Developed by:** Leonardo Magaraggia
-**GitHub:** [@leonardomagaraggia](https://github.com/leonardomagaraggia)
